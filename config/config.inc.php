@@ -1,6 +1,4 @@
 <?php
-$con = @mysqli_connect('localhost', 'viphack1_vip', 'dBf4HLqd5B', 'viphack1_vip');
-$databaseB = new mysqli('localhost', 'viphack1_vip', 'dBf4HLqd5B', 'viphack1_vip');
 
 if (!$con) {
     echo "Error: " . mysqli_connect_error();
