@@ -1,14 +1,4 @@
 <?php
-$con = @mysqli_connect('localhost', 'viphack1_vip', 'dBf4HLqd5B', 'viphack1_vip');
-if (!$con) {
-    echo "Error: " . mysqli_connect_error();
-	exit();
-}
-$con2 = @mysqli_connect('localhost', 'playerbot_ok', 'playerbot_ok99', 'playerbot_ok');
-if (!$con2) {
-    echo "Error: " . mysqli_connect_error();
-	exit();
-}
 
 //Title
 $sql = "SELECT * FROM coupon ";
