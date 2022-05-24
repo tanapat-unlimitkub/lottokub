@@ -1,0 +1,155 @@
+.score_next {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.aura_symbol_P {
+    border: 6px solid blue;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-animation-name: aura_symbol_P_animation;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: aura_symbol_P_animation;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.aura_symbol_T {
+    border: 6px solid green;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50%;
+    -webkit-animation-name: aura_symbol_T_animation;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: aura_symbol_T_animation;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.aura_symbol_B {
+    border: 6px solid red;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-animation-name: aura_symbol_B_animation;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: aura_symbol_B_animation;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes aura_symbol_P_animation {
+    from {
+        box-shadow: 0 0 30px #0000FF;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes aura_symbol_P_animation {
+    from {
+        box-shadow: 0 0 30px #0000FF;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes aura_symbol_T_animation {
+    from {
+        box-shadow: 0 0 30px #00FF00;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes aura_symbol_T_animation {
+    from {
+        box-shadow: 0 0 30px #00FF00;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes aura_symbol_B_animation {
+    from {
+        box-shadow: 0 0 30px #FF0000;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes aura_symbol_B_animation {
+    from {
+        box-shadow: 0 0 30px #FF0000;
+    }
+    to {
+        box-shadow: 0 0 30px #000000;
+    }
+}

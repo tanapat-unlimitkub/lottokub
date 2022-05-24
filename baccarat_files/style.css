@@ -1,0 +1,375 @@
+div>div.circle {
+    width: auto;
+    height: auto;
+}
+
+div>img.img_rate_room {
+    width: auto;
+    height: auto;
+}
+
+div.container {
+    padding: 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    /* background: url("/asset/img/bg.png") no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_list {
+    /* background: url("/asset/img/bg_list_room.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid rgba(0, 0, 0, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-size: 100% 100%;
+}
+
+.div_list_room {
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    height: auto;
+}
+
+.logo_rate_room {
+    width: 100%;
+}
+
+
+/* .rate_room {
+    background: url("/asset/img/rate_room.png");
+} */
+
+
+/* @font-face {
+    font-family: "DS-DIGIB";
+    src: url("/asset/fonts/DS-DIGIB.TTF");
+}
+
+@font-face {
+    font-family: "FC_Active";
+    src: url("/asset/fonts/FC_Active.TTF");
+}
+ */
+
+thaifont {
+    font-family: "FC_Active";
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.img_rate_room {
+    z-index: 10;
+    position: absolute;
+    width: auto;
+}
+
+.name_room {
+    margin-top: -5%;
+}
+
+.circle {
+    width: 72px;
+    height: 72px;
+    background-image: linear-gradient(#888, #666, #444, #222, #222);
+    padding: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50%;
+    border-width: 0px;
+    animation: rot 3s linear infinite;
+    padding: 0px;
+    z-index: 5;
+}
+
+.circle>div {
+    background: none;
+    height: 70px;
+    width: 70px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50%;
+    border-width: 5px;
+    z-index: 5;
+}
+
+.circle b {
+    animation: none;
+}
+
+.text_in_circle {
+    margin: auto;
+    font-family: "DS-DIGIB";
+    position: absolute;
+    z-index: 10;
+    font-size: 110%;
+    color: white;
+    /* text-shadow: 0px 0px 3px #FF0000; */
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(90deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    75% {
+        transform: rotate(270deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.minus {
+    font-size: 150%;
+}
+
+.wait_sood {
+    font-size: 110%;
+}
+
+rateroom100 {
+    font-size: 140%;
+}
+
+rateroomlow {
+    font-size: 150%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.room_hover {
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+
+.room_hover:hover {
+    box-shadow: 0px 0px 8px #FF0000;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-attachment: fixed;
+        height: 100%;
+    }
+    .circle {
+        width: 62px;
+        height: 62px;
+    }
+    .circle>div {
+        width: 60px;
+        height: 60px;
+    }
+    .text_in_circle {
+        font-family: "DS-DIGIB";
+        position: absolute;
+        z-index: 10;
+        font-size: 90%;
+        color: white;
+        text-shadow: 0px 0px 3px #FF0000;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
+    .circle>div {
+        width: 43px;
+        height: 43px;
+    }
+    .text_in_circle {
+        font-family: "DS-DIGIB";
+        position: absolute;
+        z-index: 10;
+        font-size: 60%;
+        color: white;
+        text-shadow: 0px 0px 3px #FF0000;
+    }
+    .img_rate_room {
+        position: absolute;
+        z-index: 10;
+        width: auto;
+    }
+    .logo_rate_room {
+        width: 115%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-size: cover;
+        display: block;
+    }
+    .col-md-8 {
+        width: 70%;
+    }
+    .col-md-4 {
+        width: 30%;
+    }
+    .circle {
+        width: 122px;
+        height: 122px;
+    }
+    .circle>div {
+        width: 120px;
+        height: 120px;
+    }
+    .text_in_circle {
+        font-family: "DS-DIGIB";
+        position: absolute;
+        z-index: 10;
+        font-size: 70%;
+        color: white;
+        /* text-shadow: 0px 0px 3px #FF0000; */
+    }
+    .logo_rate_room {
+        width: 100%;
+    }
+    .img_rate_room {
+        position: absolute;
+        width: auto;
+    }
+    .name_room {
+        margin-top: 0%;
+        font-size: 150%;
+    }
+    .text_in_circle {
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .text_in_circle {
+        font-size: 90%;
+    }
+    thaifont {
+        font-size: 180%;
+    }
+    rateroom100 {
+        font-size: 180%;
+    }
+    rateroomlow {
+        font-size: 180%;
+    }
+    .img_rate_room {
+        position: absolute;
+        width: 50%;
+    }
+    .circle>div {
+        width: 120px;
+        height: 120px;
+    }
+    .circle {
+        width: 118px;
+        height: 118px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .circle>div {
+        width: 105px;
+        height: 105px;
+    }
+    .circle {
+        width: 103px;
+        height: 103px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .circle>div {
+        width: 100px;
+        height: 100px;
+    }
+    .circle {
+        width: 98px;
+        height: 98px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .circle>div {
+        width: 95px;
+        height: 95px;
+    }
+    .circle {
+        width: 93px;
+        height: 93px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .circle>div {
+        width: 88px;
+        height: 88px;
+    }
+    .circle {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo_rate_room {
+        width: 90%;
+    }
+    .name_room {
+        margin-top: -5%;
+        font-size: 120%;
+    }
+    .circle>div {
+        width: 80px;
+        height: 80px;
+    }
+    .circle {
+        width: 78px;
+        height: 78px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .circle>div {
+        width: 75px;
+        height: 75px;
+    }
+    .circle {
+        width: 73px;
+        height: 73px;
+    }
+}

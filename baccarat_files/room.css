@@ -1,0 +1,283 @@
+#main {
+    background: rgb(80, 80, 80);
+}
+
+html {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+
+/* Custom Button With Image */
+
+.btn-custom-room {
+    /* background-image: url('/asset/img/btn-custom-room.png'); */
+    background-size: 100% 100%;
+    object-fit: cover;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2F2F2F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #950000;
+}
+
+
+/* END scroll bar */
+
+
+/*  Table Scroll  */
+
+#result_rate_span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.table tbody th,
+.table tbody td {
+    /* border: 0px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.table tbody tr {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.table thead td,
+.table thead th {
+    border: 0px solid;
+}
+
+.table.table-fixed tbody td {
+    background: rgba(41, 41, 41, 1) 0%;
+    color: white;
+}
+
+.table.table-fixed tbody tr {
+    border-radius: 50%;
+}
+
+.table-fixed tbody {
+    display: block;
+    max-height: 343px;
+    overflow-y: auto;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.table-dark>thead,
+.table-dark>thead>th,
+.table-dark>thead>td {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.table-fixed tr th {
+    color: white;
+}
+
+.table-fixed thead {
+    /* background-image: url('/asset/img/bar_table.png'); */
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.table-fixed thead,
+.table-fixed tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-fixed thead {
+    width: 100%;
+}
+
+.table-fixed table {
+    width: 200px;
+}
+
+
+/*  ---------------------  */
+
+
+/* Bardouble */
+
+.bar_double {
+    /* background-image: url('/asset/img/bar_double.png'); */
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    font-size: 120%;
+    background-repeat: no-repeat;
+}
+
+
+/*  ----------------------------  */
+
+
+/* Symbol */
+
+.circle_symbol {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 120%;
+    color: #fff;
+    text-align: center;
+    /* background: #000; */
+    margin: auto;
+    font-weight: bold;
+}
+
+.circle_symbol.circle_P {
+    background-color: blue;
+    border: none;
+}
+
+.circle_symbol.circle_T {
+    background-color: green;
+    border: none;
+}
+
+.circle_symbol.circle_B {
+    border: none;
+    background-color: red;
+}
+
+.circle_symbol.circle_W {
+    background-color: none;
+    border: 3px;
+}
+
+
+/*  ---------------------  */
+
+
+/* score all table */
+
+.td_sc {
+    border: 2px solid black !important;
+    padding: 0.5% !important;
+    width: 8% !important;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/*  ---------------------  */
+
+
+/* Table scroll Width PC */
+
+
+/* ------------------ */
+
+@media only screen and (max-width: 1200px) {
+    .circle_symbol {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        display: block !important;
+    }
+    #name_room {
+        width: 60% !important;
+    }
+    .col-md-5.text-right {
+        width: 40%;
+        padding-right: 5px;
+    }
+    .col-md-2.text-center {
+        width: 20%;
+        padding: 0px;
+    }
+    .col-md-5.text-left {
+        width: 40%;
+        padding-left: 5px;
+    }
+    .circle_symbol {
+        width: 24px;
+        height: 24px;
+    }
+    .td_sc {
+        border: 2px solid black !important;
+        padding: 0.5% !important;
+        width: 8% !important;
+        background: white;
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        display: block !important;
+        height: 110%;
+    }
+    /*  name_room   */
+    #name_room {
+        width: 100% !important;
+        font-size: 120%;
+    }
+    /*  swith_row */
+    #swith_row {
+        flex-direction: column-reverse;
+    }
+    /* --------------- */
+    .col-md-5.text-right {
+        width: 40%;
+        padding-right: 5px;
+    }
+    .col-md-2.text-center {
+        width: 20%;
+        padding: 0px;
+    }
+    .col-md-5.text-left {
+        width: 40%;
+        padding-left: 5px;
+    }
+    div.container {
+        padding: 5px;
+    }
+    .circle_symbol {
+        width: 20px;
+        height: 20px;
+        font-size: 100%;
+    }
+    th.col-md-2 {
+        width: 15%;
+    }
+    th.col-md-6 {
+        width: 55%;
+    }
+    th.col-md-4 {
+        width: 30%;
+    }
+    td.col-md-2 {
+        width: 15%;
+    }
+    td.col-md-6 {
+        width: 55%;
+    }
+    td.col-md-4 {
+        width: 30%;
+    }
+}
